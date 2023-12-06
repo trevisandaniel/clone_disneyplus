@@ -2,10 +2,11 @@
   "description": "",
   "devDependencies": {
     "gulp": "^4.0.2",
-    "gulp-sass": "^5.1.0"
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.69.5"
   },
   "scripts": {
-    "build":"gulp",
+    "build": "gulp",
     "test": "echo \"Error: no test especified\" && exit 1"
   }
 }
