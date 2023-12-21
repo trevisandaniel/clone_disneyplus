@@ -42,11 +42,11 @@
 
     <section class="shows">
         <nav class="shows__tabs">
-            <button class="shows__tabs__button">Em Breve</button>
-            <button class="shows__tabs__button">Mais Populares</button>
-            <button class="shows__tabs__button">Mais no Star+</button>
+            <button data-tab-button="em_breve" class="shows__tabs__button shows__tabs__button--is-active">Em Breve</button>
+            <button data-tab-button="populares" class="shows__tabs__button">Mais Populares</button>
+            <button data-tab-button="star_plus" class="shows__tabs__button">Mais no Star+</button>
         </nav>
-        <ul class="shows__list">
+        <ul data-tab-id="em_breve" class="shows__list shows__list--is-active">
             <li class="shows__list__item">
                 <img src="./dist/images/em_breve/spidey.jpg" alt="">
             </li>
@@ -72,6 +72,62 @@
             </li>
 
         </ul>
+
+        <ul data-tab-id="populares" class="shows__list">
+            <li class="shows__list__item">
+                <img src="./dist/images/mais_populares/bluey.jpg" alt="">
+            </li>
+
+            <li class="shows__list__item">
+                <img src="./dist/images/mais_populares/cavaleira_da_lua.jpg" alt="">
+            </li>
+
+            <li class="shows__list__item">
+                <img src="./dist/images/mais_populares/o_incrivel_dr_pol.jpg" alt="">
+            </li>
+
+            <li class="shows__list__item">
+                <img src="./dist/images/mais_populares/obi_wan.jpg" alt="">
+            </li>
+
+            <li class="shows__list__item">
+                <img src="./dist/images/mais_populares/red.jpg" alt="">
+            </li>
+
+            <li class="shows__list__item">
+                <img src="./dist/images/mais_populares/tudo_igual_sqn.jpg" alt="">
+            </li>
+
+        </ul>
+
+        <ul data-tab-id="star_plus" class="shows__list">
+            <li class="shows__list__item">
+                <img src="./dist/images/mais_no_star_plus/belair.jpg" alt="">
+            </li>
+
+            <li class="shows__list__item">
+                <img src="./dist/images/mais_no_star_plus/libertadores.jpg" alt="">
+            </li>
+
+            <li class="shows__list__item">
+                <img src="./dist/images/mais_no_star_plus/nba.jpg" alt="">
+            </li>
+
+            <li class="shows__list__item">
+                <img src="./dist/images/mais_no_star_plus/os_simpson.jpg" alt="">
+            </li>
+
+            <li class="shows__list__item">
+                <img src="./dist/images/mais_no_star_plus/premier_league.jpg" alt="">
+            </li>
+
+            <li class="shows__list__item">
+                <img src="./dist/images/mais_no_star_plus/the_kardashians.jpg" alt="">
+            </li>
+
+        </ul>
     </section>
+
+    <script src="src/main.js"></script>
 </body>
 </html>

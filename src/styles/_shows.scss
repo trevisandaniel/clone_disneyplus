@@ -3,10 +3,15 @@
 .shows {
     padding: 2vw 5.6vw;
     &__list{
-        display: grid;
+        display: none;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 24px;
         margin-top: 44px;
+
+        &--is-active{
+            display: grid;
+        }
+
         &__item{
             img{
                 max-width: 100%;
@@ -21,11 +26,17 @@
         &__button{
             color: variaveis.$corTextoSecundario;
             font-size: 20px;
-            border-bottom: 5px solid variaveis.$corTextoSecundario;
+            border: none;
             padding-bottom: 5px;
             background: none;
             text-transform: uppercase;
             margin: 0 1vw;
+            cursor: pointer;
+            border-bottom: 5px solid transparent;
+
+            &--is-active{
+                border-bottom: 5px solid variaveis.$corTextoSecundario;
+            }
         }
     }
 }
