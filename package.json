@@ -10,5 +10,8 @@
     "dev":"gulp watch",
     "build": "gulp",
     "test": "echo \"Error: no test especified\" && exit 1"
+  },
+  "build":{
+    "outputs":[".vercel/**"]
   }
 }
